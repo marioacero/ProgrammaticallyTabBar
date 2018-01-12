@@ -31,6 +31,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         arrayVc?.append(setViewControllerForTabarItem(itemType: .Home))
         arrayVc?.append(setViewControllerForTabarItem(itemType: .Profile))
+        arrayVc?.append(setViewControllerForTabarItem(itemType: .Settings))
+        arrayVc?.append(setViewControllerForTabarItem(itemType: .More))
         viewControllers = arrayVc
     }
     

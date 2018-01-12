@@ -2,7 +2,7 @@
 //  ModelViewController.swift
 //  programmaticallyTabBar
 //
-//  Created by Jose Mario Acero Castañeda on 1/11/18.
+//  Created by  Mario Acero  on 1/11/18.
 //  Copyright © 2018 Mario Acero. All rights reserved.
 //
 
@@ -31,12 +31,17 @@ struct TabBarItemController {
             self.controller = storyBoard.instantiateViewController(withIdentifier: controllerName) as! ProfileViewController
             self.imageEnbled = AppConstants.ItemsTabBarName.Profile.imageEnbled
             self.imageDisabled = AppConstants.ItemsTabBarName.Profile.imageDisabled
-        default:
-            self.controllerName = AppConstants.ItemsTabBarName.Home.name
-            self.controller = storyBoard.instantiateViewController(withIdentifier: controllerName) as! HomeViewController
-            self.imageEnbled = AppConstants.ItemsTabBarName.Home.imageEnbled
-            self.imageDisabled = AppConstants.ItemsTabBarName.Home.imageDisabled
-            break
+        case .Settings:
+            self.controllerName = AppConstants.ItemsTabBarName.Settings.name
+            self.controller = storyBoard.instantiateViewController(withIdentifier: controllerName) as! SettingsViewController
+            self.imageEnbled = AppConstants.ItemsTabBarName.Settings.imageEnbled
+            self.imageDisabled = AppConstants.ItemsTabBarName.Settings.imageDisabled
+        case .More:
+            self.controllerName = AppConstants.ItemsTabBarName.More.name
+            self.controller = storyBoard.instantiateViewController(withIdentifier: controllerName) as! MoreViewController
+            self.imageEnbled = AppConstants.ItemsTabBarName.More.imageEnbled
+            self.imageDisabled = AppConstants.ItemsTabBarName.More.imageDisabled
+        
         }
     }
 }

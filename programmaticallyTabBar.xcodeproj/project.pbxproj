@@ -80,6 +80,7 @@
 		032CD90D200805AC005A63CE /* programmaticallyTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				032CD91A200805AC005A63CE /* Info.plist */,
 				032CD93F20082A68005A63CE /* App */,
 				032CD93D20082A08005A63CE /* Common */,
 				032CD93E20082A40005A63CE /* Controllers */,
@@ -159,7 +160,6 @@
 			children = (
 				032CD912200805AC005A63CE /* Main.storyboard */,
 				032CD917200805AC005A63CE /* LaunchScreen.storyboard */,
-				032CD91A200805AC005A63CE /* Info.plist */,
 				032CD90E200805AC005A63CE /* AppDelegate.swift */,
 				032CD910200805AC005A63CE /* ViewController.swift */,
 				032CD915200805AC005A63CE /* Assets.xcassets */,

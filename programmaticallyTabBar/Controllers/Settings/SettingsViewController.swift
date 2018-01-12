@@ -2,13 +2,13 @@
 //  SettingsViewController.swift
 //  programmaticallyTabBar
 //
-//  Created by Jose Mario Acero Castañeda on 1/11/18.
+//  Created by  Mario Acero on 1/11/18.
 //  Copyright © 2018 Mario Acero. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UITabBarController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
