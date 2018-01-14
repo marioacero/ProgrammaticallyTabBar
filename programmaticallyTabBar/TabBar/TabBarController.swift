@@ -29,10 +29,10 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         // Set all off ViewControllers for TabBar
         
-        arrayVc?.append(setViewControllerForTabarItem(itemType: .Home))
-        arrayVc?.append(setViewControllerForTabarItem(itemType: .Profile))
-        arrayVc?.append(setViewControllerForTabarItem(itemType: .Settings))
-        arrayVc?.append(setViewControllerForTabarItem(itemType: .More))
+        arrayVc?.append(setViewControllerForTabBarItem(itemType: .Home))
+        arrayVc?.append(setViewControllerForTabBarItem(itemType: .Profile))
+        arrayVc?.append(setViewControllerForTabBarItem(itemType: .Settings))
+        arrayVc?.append(setViewControllerForTabBarItem(itemType: .More))
         viewControllers = arrayVc
     }
     
@@ -43,10 +43,10 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
 private extension TabBarController{
     
-    func setViewControllerForTabarItem(itemType: TabBarItems)-> UIViewController {
+    func setViewControllerForTabBarItem(itemType: TabBarItems)-> UIViewController {
         itemController =  TabBarItemController(itemType: itemType)
-        itemController.controller.tabBarItem = UITabBarItem.init(title: itemType.rawValue, image: UIImage(named: itemController.imageDisabled )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named:itemController.imageEnbled))
-        let viewController = UINavigationController.init(rootViewController: itemController.controller)
+        itemController.controller.tabBarItem = UITabBarItem(title: itemType.rawValue, image: UIImage(named: itemController.imageDisabled )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named:itemController.imageEnbled))
+        let viewController = UINavigationController(rootViewController: itemController.controller)
         return viewController
     }
 }
